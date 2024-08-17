@@ -26,6 +26,7 @@ const Navbar = () => {
       let accounts;
       if (walletType === 'metamask' && window.ethereum) {
         accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        console.log(accounts)
       } else if (walletType === 'trustwallet' && window.trustwallet) {
         accounts = await window.trustwallet.ethereum.request({ method: 'eth_requestAccounts' });
       } else {

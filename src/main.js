@@ -25,7 +25,7 @@ const StakeForm = ({ amount, setAmount, tokenBalance, handleSubmit, buttonText, 
             className="w-full text-right no-arrows outline-none focus:outline-none border-none text-[24px] font-bold"
           />
           <p className="ml-5 text-[24px] font-[100] tracking-[0.22512px] leading-[1.5]">
-            BASE
+            ETH
           </p>
         </div>
         <ButtonBase
@@ -96,7 +96,7 @@ const Main = () => {
       <div className="mt-[70px]">
         <article className="pb-[24px] my-[60px] mb-[80px] md:mb-[100px]">
           <h2 className="text-[50px] leading-[56px] font-[400]">
-            SINGLE STAKE POOL
+            BASE STAKE POOL
           </h2>
           <p className="text-[20px] font-[700] leading-[32px]">
             Staked $BASE is locked until maturity.
@@ -106,7 +106,7 @@ const Main = () => {
           <div className="mb-[24px]">
             <FormHeader leading="APY" value="1200%" />
             <FormHeader leading="Lock Time" value="1 month" />
-            <FormHeader leading="Wallet" value={`${tokenBalance} BASE`} />
+            <FormHeader leading="Wallet" value={`${tokenBalance} ETH`} />
           </div>
           <StakeForm
             amount={amount}
@@ -131,11 +131,11 @@ const Main = () => {
           <p className="text-[14px] transition-opacity duration-200 ease-linear">
             {unStakedStatus}
           </p>
-          <article>
+          <article className="pb-8">
             <hr />
             <section className="flex justify-between items-center mt-[24px]">
               <h3 className="text-[16px] font-[700]">Your Rewards</h3>
-              <h3 className="text-[24px] font-[700]">{stakeReward} BASE</h3>
+              <h3 className="text-[24px] font-[700]">{stakeReward} ETH</h3>
             </section>
             <StakeButton
               buttonText="CLAIM REWARDS"

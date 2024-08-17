@@ -13,10 +13,9 @@ const Footer = () => {
   return (
     <footer className="flex flex-col justify-center items-center pt-[60px] pb-[100px]">
       <section className="flex justify-center space-x-6 items-center">
-        <FooterLinkBtn linkIcon={<FaTelegramPlane size={iconSize-4} />} Link="#"  />
-        <FooterLinkBtn linkIcon={<FaXTwitter size={iconSize} />} Link="#" />
+        <img className="w-[5rem]" alt="base-logo" src="/base-logo.svg" />
       </section>
-      <h5 className="text-[16px] mt-[30px] font-[400]">COPYRIGHT © {year} HOME Staking</h5>
+      <h5 className="text-[16px] mt-[30px] font-[400]">COPYRIGHT © {year} BASE Staking</h5>
     </footer>
   );
 };
